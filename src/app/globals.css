@@ -203,98 +203,107 @@ textarea:focus-visible {
   position: relative;
   height: calc(100svh - 130px);
   min-height: 530px;
-  max-width: 1800px;
-  margin: auto;
-  overflow: hidden;
+  overflow: clip;
+  isolation: isolate;
 }
 .photo-field {
+  z-index: 0;
   position: absolute;
-  left: 3%;
+  width: 100%;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 66%;
-  height: 90%;
-  container-type: inline-size;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 0;
 }
 .photo {
   --delay: var(--ddelay);
   --push-x: var(--dpush-x);
   --push-y: var(--dpush-y);
-  position: absolute;
-  left: var(--dx);
-  top: var(--dy);
-  width: 7%;
+  position: relative;
+  width: 100%;
   aspect-ratio: 1;
-  translate: -50% -50%;
+  min-width: 0;
   padding: 0;
   border: 0;
   border-radius: 0;
   background: #171717;
-  animation: photo-ripple 1700ms cubic-bezier(0.2, 0.65, 0.25, 1) both;
-  animation-delay: var(--delay);
-  will-change: transform, opacity;
+  animation: photo-arrive 1000ms ease both, photo-wake 8500ms ease-in-out infinite;
+  animation-delay: var(--delay), var(--delay);
 }
 .photo img {
-  filter: grayscale(1) brightness(0.76);
-  transition: filter 0.2s;
+  filter: grayscale(1) brightness(0.67);
 }
-.photo:hover img,
-.photo:focus-visible img {
-  filter: grayscale(1) brightness(1);
+.photo .photo-color {
+  position: absolute;
+  inset: 0;
+  filter: saturate(1.12) brightness(0.94);
+  opacity: 0;
+  pointer-events: none;
+  mask-image: radial-gradient(circle 115px at var(--spot-x, 50%) var(--spot-y, 50%), #000 12%, #000b 44%, transparent 100%);
+  transition: opacity 380ms ease;
 }
-.photo > span {
-  display: none;
+.photo.is-near .photo-color { opacity: 1; }
+.photo:focus-visible .photo-color { opacity: 1; mask-image: none; }
+.photo > span { display: none; }
+@keyframes photo-arrive {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-@keyframes photo-ripple {
-  0% {
-    opacity: 0;
-    transform: translate(calc(var(--push-x) * -0.8), calc(var(--push-y) * -0.8))
-      scale(0.8);
-  }
-  38% {
-    opacity: 1;
-    transform: translate(var(--push-x), var(--push-y)) scale(1.045);
-  }
-  66% {
-    opacity: 1;
-    transform: translate(
-        calc(var(--push-x) * -0.22),
-        calc(var(--push-y) * -0.22)
-      )
-      scale(0.985);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0) scale(1);
-  }
+@keyframes photo-wake {
+  0%, 45%, 100% { transform: translate(0, 0) scale(1); }
+  12% { transform: translate(var(--push-x), var(--push-y)) scale(0.94); }
+  25% { transform: translate(calc(var(--push-x) * -0.2), calc(var(--push-y) * -0.2)) scale(1.015); }
+}
+.wake-paused .photo { animation-play-state: paused; }
+.photo-fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 45% 42% at 29% 48%, #090909ed 0%, #090909c9 28%, #09090966 62%, transparent 100%),
+    radial-gradient(ellipse 35% 65% at 80% 50%, #090909f2 0%, #090909e0 30%, #09090988 58%, transparent 100%),
+    linear-gradient(0deg, #090909 0%, #09090915 22%, #09090915 78%, #090909 100%);
 }
 .home-statement {
   position: absolute;
-  z-index: 5;
-  left: 23%;
-  top: 50%;
-  width: 58%;
+  z-index: 2;
+  left: 6%;
+  top: 48%;
+  width: 55%;
   transform: translateY(-50%);
   pointer-events: none;
-  padding-left: 0;
-}
-.home-statement .overline {
-  margin-bottom: 12px;
-  color: #b2b2b2;
-  font-size: 10px;
 }
 .home-statement h1 {
-  font-size: clamp(40px, 9cqw, 104px);
-  line-height: 0.98;
+  text-shadow: 0 2px 30px #0008;
+  font-size: clamp(36px, 4.6vw, 82px);
+  white-space: nowrap;
+  line-height: 1;
   letter-spacing: -0.06em;
   font-weight: 800;
 }
 .home-intro {
   position: absolute;
-  left: 73%;
-  right: 4%;
-  top: 30%;
-  max-width: 340px;
+  z-index: 2;
+  left: 66%;
+  right: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 390px;
+  text-shadow: 0 1px 18px #0009;
+}
+.wake-toggle {
+  position: absolute;
+  z-index: 3;
+  bottom: 16px;
+  left: 4%;
+  padding: 7px 10px;
+  border: 1px solid #ffffff30;
+  background: #090909a0;
+  color: #aaa;
+  font-size: 10px;
 }
 .home-intro h2 {
   font-size: clamp(22px, 2vw, 32px);
@@ -677,8 +686,8 @@ textarea:focus-visible {
 }
 @media (max-width: 1100px) and (min-width: 701px) {
   .home-intro {
-    left: 72%;
-    right: 3%;
+    left: 66%;
+    right: 4%;
   }
   .home-intro h2 {
     font-size: 23px;
@@ -717,9 +726,7 @@ textarea:focus-visible {
   .site-footer {
     height: 40px;
   }
-  .home-intro {
-    top: 22%;
-  }
+
   .us-stage {
     height: calc(100svh - 110px);
     min-height: 580px;
@@ -766,45 +773,36 @@ textarea:focus-visible {
     gap: 12px;
   }
   .home-stage {
-    height: auto;
-    min-height: 0;
-    padding: 24px 0 36px;
+    height: calc(100svh - 120px);
+    min-height: 740px;
+    padding: 0;
   }
   .photo-field {
-    position: relative;
-    left: 3%;
-    top: auto;
-    transform: none;
-    width: 94%;
-    height: 620px;
+    grid-template-columns: repeat(7, 1fr);
   }
   .photo {
-    left: var(--mx);
-    top: var(--my);
-    width: 10%;
     --delay: var(--mdelay);
     --push-x: var(--mpush-x);
     --push-y: var(--mpush-y);
   }
+  .photo-fade {
+    background:
+      radial-gradient(ellipse 95% 26% at 50% 26%, #090909d9 0%, #0909098c 42%, transparent 100%),
+      radial-gradient(ellipse 100% 44% at 50% 67%, #090909f2 0%, #090909e0 40%, #09090988 70%, transparent 100%),
+      linear-gradient(0deg, #090909, transparent 14%, transparent 88%, #090909);
+  }
   .home-statement {
-    left: 4%;
-    width: 92%;
-    padding: 0;
+    left: 7%;
+    top: 26%;
+    width: 86%;
   }
-  .home-statement .overline {
-    font-size: 8px;
-    margin-bottom: 9px;
-  }
-  .home-statement h1 {
-    font-size: 12cqw;
-    line-height: 0.98;
-  }
+  .home-statement h1 { font-size: 7.3vw; }
   .home-intro {
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    margin: 48px 7% 0;
+    position: absolute;
+    top: 67%;
+    left: 8%;
+    right: 8%;
+    margin: 0;
     max-width: none;
   }
   .home-intro > .overline {

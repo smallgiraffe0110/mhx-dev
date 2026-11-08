@@ -214,5 +214,107 @@
     "source": "https://www.zfellows.com/",
     "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f4154522d4fd2295b8069e_IMG_9615%201.avif",
     "asset": "/images/grid/36.webp"
+  },
+  {
+    "title": "Neuralink \u2014 R1 robot",
+    "source": "https://ifdesign.com/en/winner-ranking/project/neuralink-r1-robot/309555",
+    "url": "https://ifdalivestorage.blob.core.windows.net/user-uploads/107292/309555/00000000-0000-0000-0000-000000000000/49551.jpg",
+    "asset": "/images/grid/37.webp"
+  },
+  {
+    "title": "ITER Tokamak Assembly Hall",
+    "source": "https://www.iter.org/project/tokamak-assembly",
+    "url": "https://www.iter.org/sites/default/files/media/2025-06/vv6_over_wall2_1156.jpg",
+    "asset": "/images/grid/38.webp"
+  },
+  {
+    "title": "ITER Tokamak Assembly Hall",
+    "source": "https://www.iter.org/project/tokamak-assembly",
+    "url": "https://www.iter.org/sites/default/files/media/2025-02/hosan_25.10.24_004.jpg",
+    "asset": "/images/grid/39.webp"
+  },
+  {
+    "title": "Ion Thruster Vacuum Test",
+    "source": "https://www.jpl.nasa.gov/go/epl/gallery/ion-thrusters/",
+    "url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/next_ion_thruster_P9XJZni.jpg",
+    "asset": "/images/grid/40.webp"
+  },
+  {
+    "title": "Ion Thruster Firing",
+    "source": "https://www.jpl.nasa.gov/go/epl/gallery/ion-thrusters/",
+    "url": "https://d2pn8kiwq2w21t.cloudfront.net/images/nstar_firing.width-1024.jpg",
+    "asset": "/images/grid/41.webp"
+  },
+  {
+    "title": "Super-Kamiokande Detector Interior",
+    "source": "https://www-neutrino.kek.jp/project/sk/",
+    "url": "https://www-neutrino.kek.jp/project/sk/img/bg-visual.webp",
+    "asset": "/images/grid/42.webp"
+  },
+  {
+    "title": "SR-71 Blackbird at Edwards AFB Airshow",
+    "source": "https://graphics.stanford.edu/~lucasp/pictures/car/edwardsafb/",
+    "url": "https://graphics.stanford.edu/~lucasp/pictures/car/edwardsafb/edwards_SR71_side.jpg",
+    "asset": "/images/grid/43.webp"
+  },
+  {
+    "title": "Rocket Lab Electron\u2019s 70th Mission",
+    "source": "https://www.space.com/space-exploration/launches-spacecraft/rocket-lab-electron-five-satellites-mystery-mission-live-laugh-launch",
+    "url": "https://cdn.mos.cms.futurecdn.net/nLgpJPDEiW25dtaK7a3P5C.jpg",
+    "asset": "/images/grid/44.webp"
+  },
+  {
+    "title": "Z Machine Electrical Discharges",
+    "source": "https://en.wikipedia.org/wiki/Stockpile_stewardship",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/The_Z_Machine_%288056998596%29.jpg",
+    "asset": "/images/grid/45.webp"
+  },
+  {
+    "title": "Jet Engine Test Stand Firing",
+    "source": "https://www.mitchellaerospacepower.org/podcast/episode-138-maintaining-the-propulsion-advantage-the-race-to-deliver-tomorrows-jet-technology/",
+    "url": "https://www.mitchellaerospacepower.org/app/uploads/2023/07/GE-Thing.jpg",
+    "asset": "/images/grid/46.webp"
+  },
+  {
+    "title": "Boston Dynamics Atlas in Industrial Testing Enclosure",
+    "source": "https://www.humanoidsdaily.com/news/beyond-the-backflip-zachary-jackowski-on-why-generalization-is-the-final-frontier-for-atlas",
+    "url": "https://7jopx6ax2qhwmgqx.public.blob.vercel-storage.com/images/bd-atlas-electric.webp",
+    "asset": "/images/grid/47.webp"
+  },
+  {
+    "title": "Large Hadron Collider Tunnel",
+    "source": "https://science.osti.gov/hep/Research/Energy-Frontier",
+    "url": "https://science.osti.gov/-/media/hep/images/research/Frontiers/LHC_Large.jpeg",
+    "asset": "/images/grid/48.webp"
+  },
+  {
+    "title": "Space Shuttle Main Engine Display",
+    "source": "https://historicspacecraft.com/Space_Shuttle.html",
+    "url": "https://historicspacecraft.com/Photos/SSME_KSC_04_Kevin_Reynolds_2000.jpg",
+    "asset": "/images/grid/49.webp"
+  },
+  {
+    "title": "NASA\u2019s Valkyrie Humanoid Robot Testing",
+    "source": "https://www.bostonglobe.com/opinion/2017/11/30/millions-jobs-will-soon-done-robots-and-they-don-pay-taxes/mLiG2JMbg5y5FZpp6jiZ8K/story.html",
+    "url": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/MWKSV7GVD4I6PIX56562YDT2LA.JPG?auth=64c4530ce341c1c437414ccef5cd05e90cb1934ca0dddc5541dddc859e10ea5c&width=1440",
+    "asset": "/images/grid/50.webp"
+  },
+  {
+    "title": "Starman\u2019s Cosmic Roadster",
+    "source": "https://www.space.com/42337-spacex-tesla-roadster-starman-beyond-mars.html",
+    "url": "https://cdn.mos.cms.futurecdn.net/v2/t%3A0%2Cl%3A183%2Ccw%3A720%2Cch%3A720%2Cq%3A80%2Cw%3A720/kxQaT5mkbiQAHuG3nbixuU.jpg",
+    "asset": "/images/grid/51.webp"
+  },
+  {
+    "title": "NEA Scout Solar Sail Deployment",
+    "source": "https://ng.24.hu/tudomany/2022/01/26/napvitorlassal-egy-kisbolygo-nyomaban/",
+    "url": "https://ng.24.hu/uploads/2022/01/nea_scout_sail_fully_deployed.jpg",
+    "asset": "/images/grid/52.webp"
+  },
+  {
+    "title": "Linear Aerospike Engine Hot-Fire Test",
+    "source": "https://www.popularmechanics.com/space/rockets/a44401725/aerospike-engine-is-the-future-of-spaceflight/",
+    "url": "https://hips.hearstapps.com/hmg-prod/images/0103149-orig-649f4f1740915.jpeg",
+    "asset": "/images/grid/53.webp"
   }
 ]

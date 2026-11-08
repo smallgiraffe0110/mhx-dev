@@ -17,310 +17,364 @@ const navigation = [
 ];
 const photographs = [
   {
-    src: "grid/01.webp",
-    alt: "Steve Jobs",
-    name: "Steve Jobs",
+    "src": "grid/01.webp",
+    "alt": "Steve Jobs",
+    "name": "Steve Jobs"
   },
   {
-    src: "grid/02.webp",
-    alt: "Starship \u2014 floodlights and vapor",
-    name: "Starship \u2014 floodlights and vapor",
+    "src": "grid/02.webp",
+    "alt": "Starship \u2014 floodlights and vapor",
+    "name": "Starship \u2014 floodlights and vapor"
   },
   {
-    src: "grid/03.webp",
-    alt: "Young Jensen Huang",
-    name: "Young Jensen Huang",
+    "src": "grid/03.webp",
+    "alt": "Young Jensen Huang",
+    "name": "Young Jensen Huang"
   },
   {
-    src: "grid/04.webp",
-    alt: "Super Heavy \u2014 33 Raptor engines",
-    name: "Super Heavy \u2014 33 Raptor engines",
+    "src": "grid/04.webp",
+    "alt": "Super Heavy \u2014 33 Raptor engines",
+    "name": "Super Heavy \u2014 33 Raptor engines"
   },
   {
-    src: "grid/05.webp",
-    alt: "Elon at his computer",
-    name: "Elon at his computer",
+    "src": "grid/05.webp",
+    "alt": "Elon at his computer",
+    "name": "Elon at his computer"
   },
   {
-    src: "grid/06.webp",
-    alt: "Wendelstein 7-X \u2014 red and blue chamber",
-    name: "Wendelstein 7-X \u2014 red and blue chamber",
+    "src": "grid/06.webp",
+    "alt": "Wendelstein 7-X \u2014 red and blue chamber",
+    "name": "Wendelstein 7-X \u2014 red and blue chamber"
   },
   {
-    src: "grid/07.webp",
-    alt: "Stripe founders",
-    name: "Stripe founders",
+    "src": "grid/07.webp",
+    "alt": "Stripe founders",
+    "name": "Stripe founders"
   },
   {
-    src: "grid/08.webp",
-    alt: "IBM \u2014 quantum chandelier",
-    name: "IBM \u2014 quantum chandelier",
+    "src": "grid/08.webp",
+    "alt": "IBM \u2014 quantum chandelier",
+    "name": "IBM \u2014 quantum chandelier"
   },
   {
-    src: "grid/09.webp",
-    alt: "Zuckerberg in his dorm",
-    name: "Zuckerberg in his dorm",
+    "src": "grid/09.webp",
+    "alt": "Zuckerberg in his dorm",
+    "name": "Zuckerberg in his dorm"
   },
   {
-    src: "grid/10.webp",
-    alt: "Starship \u2014 ignition close-up",
-    name: "Starship \u2014 ignition close-up",
+    "src": "grid/10.webp",
+    "alt": "Starship \u2014 ignition close-up",
+    "name": "Starship \u2014 ignition close-up"
   },
   {
-    src: "grid/11.webp",
-    alt: "Bill Gates \u2014 early days",
-    name: "Bill Gates \u2014 early days",
+    "src": "grid/11.webp",
+    "alt": "Bill Gates \u2014 early days",
+    "name": "Bill Gates \u2014 early days"
   },
   {
-    src: "grid/12.webp",
-    alt: "CERN \u2014 ALICE detector",
-    name: "CERN \u2014 ALICE detector",
+    "src": "grid/12.webp",
+    "alt": "CERN \u2014 ALICE detector",
+    "name": "CERN \u2014 ALICE detector"
   },
   {
-    src: "grid/13.webp",
-    alt: "Google founders",
-    name: "Google founders",
+    "src": "grid/13.webp",
+    "alt": "Google founders",
+    "name": "Google founders"
   },
   {
-    src: "grid/14.webp",
-    alt: "Falcon Heavy \u2014 twin booster landing",
-    name: "Falcon Heavy \u2014 twin booster landing",
+    "src": "grid/14.webp",
+    "alt": "Falcon Heavy \u2014 twin booster landing",
+    "name": "Falcon Heavy \u2014 twin booster landing"
   },
   {
-    src: "grid/15.webp",
-    alt: "Etched founders",
-    name: "Etched founders",
+    "src": "grid/15.webp",
+    "alt": "Etched founders",
+    "name": "Etched founders"
   },
   {
-    src: "grid/16.webp",
-    alt: "ASML EUV Lithography Machine Interior",
-    name: "ASML EUV Lithography Machine Interior",
+    "src": "grid/16.webp",
+    "alt": "ASML EUV Lithography Machine Interior",
+    "name": "ASML EUV Lithography Machine Interior"
   },
   {
-    src: "grid/17.webp",
-    alt: "Elon \u2014 PayPal",
-    name: "Elon \u2014 PayPal",
+    "src": "grid/17.webp",
+    "alt": "Elon \u2014 PayPal",
+    "name": "Elon \u2014 PayPal"
   },
   {
-    src: "grid/18.webp",
-    alt: "Super\u2011Kamiokande Detector Interior",
-    name: "Super\u2011Kamiokande Detector Interior",
+    "src": "grid/18.webp",
+    "alt": "Super\u2011Kamiokande Detector Interior",
+    "name": "Super\u2011Kamiokande Detector Interior"
   },
   {
-    src: "grid/19.webp",
-    alt: "YouTube founders",
-    name: "YouTube founders",
+    "src": "grid/19.webp",
+    "alt": "YouTube founders",
+    "name": "YouTube founders"
   },
   {
-    src: "grid/20.webp",
-    alt: "James Webb Space Telescope Mirror Integration",
-    name: "James Webb Space Telescope Mirror Integration",
+    "src": "grid/20.webp",
+    "alt": "James Webb Space Telescope Mirror Integration",
+    "name": "James Webb Space Telescope Mirror Integration"
   },
   {
-    src: "grid/21.webp",
-    alt: "Z Fellows candid",
-    name: "Z Fellows candid",
+    "src": "grid/21.webp",
+    "alt": "Z Fellows candid",
+    "name": "Z Fellows candid"
   },
   {
-    src: "grid/22.webp",
-    alt: "Wendelstein 7-X \u2014 metallic chamber",
-    name: "Wendelstein 7-X \u2014 metallic chamber",
+    "src": "grid/22.webp",
+    "alt": "Wendelstein 7-X \u2014 metallic chamber",
+    "name": "Wendelstein 7-X \u2014 metallic chamber"
   },
   {
-    src: "grid/23.webp",
-    alt: "Mercor founders",
-    name: "Mercor founders",
+    "src": "grid/23.webp",
+    "alt": "Mercor founders",
+    "name": "Mercor founders"
   },
   {
-    src: "grid/24.webp",
-    alt: "RS-25 \u2014 engine firing at night",
-    name: "RS-25 \u2014 engine firing at night",
+    "src": "grid/24.webp",
+    "alt": "RS-25 \u2014 engine firing at night",
+    "name": "RS-25 \u2014 engine firing at night"
   },
   {
-    src: "grid/25.webp",
-    alt: "Google \u2014 dorm room",
-    name: "Google \u2014 dorm room",
+    "src": "grid/25.webp",
+    "alt": "Google \u2014 dorm room",
+    "name": "Google \u2014 dorm room"
   },
   {
-    src: "grid/26.webp",
-    alt: "Starship \u2014 booster catch",
-    name: "Starship \u2014 booster catch",
+    "src": "grid/26.webp",
+    "alt": "Starship \u2014 booster catch",
+    "name": "Starship \u2014 booster catch"
   },
   {
-    src: "grid/27.webp",
-    alt: "Bill Gates \u2014 archival",
-    name: "Bill Gates \u2014 archival",
+    "src": "grid/27.webp",
+    "alt": "Bill Gates \u2014 archival",
+    "name": "Bill Gates \u2014 archival"
   },
   {
-    src: "grid/28.webp",
-    alt: "National Ignition Facility \u2014 laser machinery",
-    name: "National Ignition Facility \u2014 laser machinery",
+    "src": "grid/28.webp",
+    "alt": "National Ignition Facility \u2014 laser machinery",
+    "name": "National Ignition Facility \u2014 laser machinery"
   },
   {
-    src: "grid/29.webp",
-    alt: "Early Facebook team",
-    name: "Early Facebook team",
+    "src": "grid/29.webp",
+    "alt": "Early Facebook team",
+    "name": "Early Facebook team"
   },
   {
-    src: "grid/30.webp",
-    alt: "Perseverance rover assembly",
-    name: "Perseverance rover assembly",
+    "src": "grid/30.webp",
+    "alt": "Perseverance rover assembly",
+    "name": "Perseverance rover assembly"
   },
   {
-    src: "grid/31.webp",
-    alt: "Ethan \u2014 Z Fellows",
-    name: "Ethan \u2014 Z Fellows",
+    "src": "grid/31.webp",
+    "alt": "Ethan \u2014 Z Fellows",
+    "name": "Ethan \u2014 Z Fellows"
   },
   {
-    src: "grid/32.webp",
-    alt: "Falcon Heavy \u2014 twilight landing",
-    name: "Falcon Heavy \u2014 twilight landing",
+    "src": "grid/32.webp",
+    "alt": "Falcon Heavy \u2014 twilight landing",
+    "name": "Falcon Heavy \u2014 twilight landing"
   },
   {
-    src: "grid/33.webp",
-    alt: "Etched founders 2",
-    name: "Etched founders 2",
+    "src": "grid/33.webp",
+    "alt": "Etched founders 2",
+    "name": "Etched founders 2"
   },
   {
-    src: "grid/34.webp",
-    alt: "Z Fellows around a table",
-    name: "Z Fellows around a table",
+    "src": "grid/34.webp",
+    "alt": "Z Fellows around a table",
+    "name": "Z Fellows around a table"
   },
   {
-    src: "grid/35.webp",
-    alt: "Z Fellows at work",
-    name: "Z Fellows at work",
+    "src": "grid/35.webp",
+    "alt": "Z Fellows at work",
+    "name": "Z Fellows at work"
   },
   {
-    src: "grid/36.webp",
-    alt: "Z Fellows candid 2",
-    name: "Z Fellows candid 2",
+    "src": "grid/36.webp",
+    "alt": "Z Fellows candid 2",
+    "name": "Z Fellows candid 2"
   },
+  {
+    "src": "grid/37.webp",
+    "alt": "Neuralink \u2014 R1 robot",
+    "name": "Neuralink \u2014 R1 robot"
+  },
+  {
+    "src": "grid/38.webp",
+    "alt": "ITER Tokamak Assembly Hall",
+    "name": "ITER Tokamak Assembly Hall"
+  },
+  {
+    "src": "grid/39.webp",
+    "alt": "ITER Tokamak Assembly Hall",
+    "name": "ITER Tokamak Assembly Hall"
+  },
+  {
+    "src": "grid/40.webp",
+    "alt": "Ion Thruster Vacuum Test",
+    "name": "Ion Thruster Vacuum Test"
+  },
+  {
+    "src": "grid/41.webp",
+    "alt": "Ion Thruster Firing",
+    "name": "Ion Thruster Firing"
+  },
+  {
+    "src": "grid/42.webp",
+    "alt": "Super-Kamiokande Detector Interior",
+    "name": "Super-Kamiokande Detector Interior"
+  },
+  {
+    "src": "grid/43.webp",
+    "alt": "SR-71 Blackbird at Edwards AFB Airshow",
+    "name": "SR-71 Blackbird at Edwards AFB Airshow"
+  },
+  {
+    "src": "grid/44.webp",
+    "alt": "Rocket Lab Electron\u2019s 70th Mission",
+    "name": "Rocket Lab Electron\u2019s 70th Mission"
+  },
+  {
+    "src": "grid/45.webp",
+    "alt": "Z Machine Electrical Discharges",
+    "name": "Z Machine Electrical Discharges"
+  },
+  {
+    "src": "grid/46.webp",
+    "alt": "Jet Engine Test Stand Firing",
+    "name": "Jet Engine Test Stand Firing"
+  },
+  {
+    "src": "grid/47.webp",
+    "alt": "Boston Dynamics Atlas in Industrial Testing Enclosure",
+    "name": "Boston Dynamics Atlas in Industrial Testing Enclosure"
+  },
+  {
+    "src": "grid/48.webp",
+    "alt": "Large Hadron Collider Tunnel",
+    "name": "Large Hadron Collider Tunnel"
+  },
+  {
+    "src": "grid/49.webp",
+    "alt": "Space Shuttle Main Engine Display",
+    "name": "Space Shuttle Main Engine Display"
+  },
+  {
+    "src": "grid/50.webp",
+    "alt": "NASA\u2019s Valkyrie Humanoid Robot Testing",
+    "name": "NASA\u2019s Valkyrie Humanoid Robot Testing"
+  },
+  {
+    "src": "grid/51.webp",
+    "alt": "Starman\u2019s Cosmic Roadster",
+    "name": "Starman\u2019s Cosmic Roadster"
+  },
+  {
+    "src": "grid/52.webp",
+    "alt": "NEA Scout Solar Sail Deployment",
+    "name": "NEA Scout Solar Sail Deployment"
+  },
+  {
+    "src": "grid/53.webp",
+    "alt": "Linear Aerospike Engine Hot-Fire Test",
+    "name": "Linear Aerospike Engine Hot-Fire Test"
+  }
 ];
 
-// Irregular positions surround the headline; no rows or rectangular frame.
-const desktopPositions = [
-  [95.11, 33.37],
-  [4.93, 65.89],
-  [50.1, 26.54],
-  [50.45, 88.73],
-  [12.59, 14.37],
-  [86.98, 84.57],
-  [27.65, 88.55],
-  [72.6, 20.16],
-  [31.32, 26.66],
-  [5.43, 40.05],
-  [90.98, 58.99],
-  [68.61, 80.63],
-  [47.9, 6.8],
-  [27.22, 6.81],
-  [13.09, 86.42],
-  [85.87, 13.3],
-  [17.72, 58.79],
-  [17.69, 38.74],
-  [60.17, 8.56],
-  [39.02, 84.33],
-  [61.48, 24.55],
-  [57.6, 73.27],
-  [27.49, 73.64],
-  [84.73, 38.31],
-  [37.4, 9.77],
-  [16.91, 72.27],
-  [75.61, 6.82],
-  [5.25, 27.19],
-  [40.61, 26.33],
-  [21.92, 21.76],
-  [90.05, 71.73],
-  [94.82, 46.11],
-  [77.81, 75.6],
-  [5.31, 52.99],
-  [48.41, 75.92],
-  [77.71, 92.37],
-];
-const mobilePositions = [
-  [92.95, 77.51],
-  [48.44, 4.3],
-  [7.29, 68.84],
-  [88.82, 37.08],
-  [12.09, 36.51],
-  [42.77, 95.67],
-  [49.99, 68.54],
-  [50.26, 31.45],
-  [85.9, 13.54],
-  [12.8, 14.58],
-  [74.15, 95.7],
-  [14.18, 86.63],
-  [78.2, 63.83],
-  [54.89, 17.86],
-  [63.03, 82.11],
-  [38.55, 82.05],
-  [29.17, 65.54],
-  [33.99, 18.42],
-  [80.91, 25.31],
-  [31.26, 37.01],
-  [68.97, 36.96],
-  [66.39, 5.25],
-  [11.33, 25.57],
-  [30.64, 5.69],
-  [65.55, 27.26],
-  [58.85, 95.05],
-  [22.72, 77.32],
-  [32.46, 27.6],
-  [75.24, 72.98],
-  [70.17, 15.53],
-  [77.86, 83.63],
-  [25.44, 95.68],
-  [91.89, 68.06],
-  [8.43, 77.95],
-  [64.94, 64.38],
-  [62.64, 72.69],
-];
-function waveStyle(position: number[], prefix: string) {
-  const [x, y] = position;
-  const dx = x - 50,
-    dy = y - 50,
-    distance = Math.hypot(dx, dy);
-  return {
-    [`--${prefix}x`]: `${x}%`,
-    [`--${prefix}y`]: `${y}%`,
-    [`--${prefix}delay`]: `${distance * 12}ms`,
-    [`--${prefix}push-x`]: `${dx * 0.45}px`,
-    [`--${prefix}push-y`]: `${dy * 0.45}px`,
-  };
+// Uniform squares fill the viewport. A radial delay carries the wake from the
+// headline through the field; the shuffled cycle avoids adjacent duplicates.
+const fieldPhotos = Array.from({ length: 126 }, (_, i) => (i * 23) % photographs.length);
+function waveStyle(index: number) {
+  function wave(columns: number, prefix: string) {
+    const dx = index % columns - columns * 0.32;
+    const dy = Math.floor(index / columns) - (columns === 14 ? 3.5 : 4.5);
+    return {
+      [`--${prefix}delay`]: `${Math.hypot(dx, dy) * 110}ms`,
+      [`--${prefix}push-x`]: `${dx * 1.5}px`,
+      [`--${prefix}push-y`]: `${dy * 1.5}px`,
+    };
+  }
+  return { ...wave(14, "d"), ...wave(7, "m") } as CSSProperties;
 }
 
 function Home({ onImage }: { onImage: (index: number) => void }) {
+  const [paused, setPaused] = useState(false);
+  const stage = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const root = stage.current;
+    if (!root) return;
+    const tiles = Array.from(root.querySelectorAll<HTMLElement>(".photo"));
+    let frame = 0;
+    let cursor: { x: number; y: number } | null = null;
+    const paint = () => {
+      frame = 0;
+      if (!cursor) return;
+      const { x, y } = cursor;
+      // Read moving tile bounds together before writing styles. Each tile clips
+      // the same soft circle, so color flows across its neighbors without seams.
+      const bounds = tiles.map((tile) => tile.getBoundingClientRect());
+      tiles.forEach((tile, index) => {
+        const rect = bounds[index];
+        const dx = Math.max(rect.left - x, 0, x - rect.right);
+        const dy = Math.max(rect.top - y, 0, y - rect.bottom);
+        const near = Math.hypot(dx, dy) < 115;
+        tile.classList.toggle("is-near", near);
+        if (near) {
+          tile.style.setProperty("--spot-x", `${(x - rect.left) / rect.width * 100}%`);
+          tile.style.setProperty("--spot-y", `${(y - rect.top) / rect.height * 100}%`);
+        }
+      });
+    };
+    const move = (event: PointerEvent) => {
+      if (event.pointerType === "touch") return;
+      cursor = { x: event.clientX, y: event.clientY };
+      if (!frame) frame = requestAnimationFrame(paint);
+    };
+    const leave = () => {
+      cursor = null;
+      cancelAnimationFrame(frame);
+      frame = 0;
+      tiles.forEach((tile) => tile.classList.remove("is-near"));
+    };
+    root.addEventListener("pointermove", move);
+    root.addEventListener("pointerleave", leave);
+    return () => {
+      leave();
+      root.removeEventListener("pointermove", move);
+      root.removeEventListener("pointerleave", leave);
+    };
+  }, []);
+
   return (
-    <main id="main" className="home-stage">
+    <main ref={stage} id="main" className={`home-stage${paused ? " wake-paused" : ""}`}>
       <div
         className="photo-field"
         aria-label="People and technology that inspire us"
       >
-        {photographs.map((photo, i) => (
+        {fieldPhotos.map((photoIndex, i) => {
+          const photo = photographs[photoIndex];
+          return (
           <button
-            key={photo.src}
+            key={i}
             className="photo"
-            style={
-              {
-                ...waveStyle(desktopPositions[i], "d"),
-                ...waveStyle(mobilePositions[i], "m"),
-              } as CSSProperties
-            }
-            onClick={() => onImage(i)}
+            style={waveStyle(i)}
+            onClick={() => onImage(photoIndex)}
             aria-label={`View ${photo.name}`}
           >
             <img src={`/images/${photo.src}`} alt={photo.alt} loading="eager" />
+            <img className="photo-color" src={`/images/${photo.src}`} alt="" aria-hidden="true" loading="eager" />
             <span>{photo.name}</span>
           </button>
-        ))}
-        <div className="home-statement">
-          <p className="overline">Exceptional from nothing.</p>
-          <h1>
-            forged in
-            <br />a new era.
-          </h1>
-        </div>
+          );
+        })}
       </div>
+      <div className="photo-fade" aria-hidden="true" />
+        <div className="home-statement">
+          <h1>forged in a new era.</h1>
+        </div>
       <aside className="home-intro">
         <p className="overline">The thesis</p>
         <h2>
@@ -344,6 +398,9 @@ function Home({ onImage }: { onImage: (index: number) => void }) {
           </Link>
         </div>
       </aside>
+      <button className="wake-toggle" onClick={() => setPaused(!paused)} aria-pressed={paused}>
+        {paused ? "Resume motion" : "Pause motion"}
+      </button>
     </main>
   );
 }

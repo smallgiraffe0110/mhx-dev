@@ -15,7 +15,7 @@ npm run dev -- --hostname 127.0.0.1 --port 4328
 
 Open http://127.0.0.1:4328.
 
-- `/`: “forged in a new era.” with 36 scattered square photos and an outward entrance ripple.
+- `/`: “forged in a new era.” with 126 uniform photo tiles from 53 sourced images across the page, soft fades behind the text, a repeating outward wake with pause/reduced-motion controls, and a soft cursor halo that reveals nearby photos in color.
 - `/us`: story and belief/that/compounds composition.
 - `/collaborate`: cinematic background and collaboration form preview.
 - `/foundry`: close-up monochrome Earth background and application preview. The previous Saturn image is retained in `public/images/saturn.jpg`.

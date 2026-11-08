@@ -6,7 +6,7 @@ Mikey explicitly wants a dark app without the previous fonts. Shared brainstorm 
 ## Purpose and composition
 - Signaling: ethos, network, story. Conversion: collaboration and fellowship applications.
 - The young, ambitious builder starting from zero is the hero. Mikey and Hunter’s faces and personal story belong on Us.
-- Explicit correction: photo motifs must be numerous, uniform upright squares. No angled Polaroids. Square shape does not mean uniform arrangement: scatter the photos irregularly around the headline, without rows or a rectangular frame. Arrival motion is a water-like wave traveling out from the center, not a sequential list fade.
+- Latest direction supersedes the compact cluster: fill the whole page with many uniform square photos, rippling outward like a wake. Overlay “forged in a new era.” and “A new generation. Building from zero.” with the photographs fading away behind the text. Current field uses 126 tiles from 53 source images; repeated photos are intentional.
 - Home: prominent “forged in a new era.”, compact black-and-white founder/rocket/AI motifs, outward animation on arrival, short thesis and conversion links. Desktop fits in one viewport with top navigation; mobile may scroll for legibility.
 - Us: belief/that/compounds composition, real portraits, story. Don’t fabricate locations or network partners.
 - Collaborate: fresh scrappy AI-native perspective, skills and young network; brief/contact form. Avoid consulting-sales language.

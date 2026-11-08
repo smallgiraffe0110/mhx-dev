@@ -12,3 +12,9 @@
 - 2026-11-08: Superseding photo-layout correction: scatter the square photos irregularly around “forged in a new era.” No regular grid or frame. Keep the radial outward ripple.
 
 - 2026-11-08: Foundry Earth trial: real NASA Apollo 8 AS08-16-2593 photograph, oversized crop and CSS monochrome, with source credit. Original Saturn asset retained. Build passed and desktop/390px phone verified, no horizontal overflow.
+
+- 2026-11-08: New user sketch supersedes equal squares and scattered spacing. Home now packs 36 varied photo rectangles edge-to-edge around a single-line headline, retaining radial ripple and image dialogs. Desktop 1440×900 has no scroll; 390px mobile has no horizontal overflow; all images loaded; dialog/Escape and production build verified.
+
+- 2026-11-08: Expanded home to 126 uniform photo tiles from 53 sourced images (17 newly added from the supplied collection), spanning full width behind the headline and thesis. Repeating radial wake, pause control and reduced-motion support. Desktop/mobile, all 126 image loads, pause, reduced motion and build verified. Fixed focus-induced background scrolling with overflow:clip. Local revision, not yet pushed.
+
+- 2026-11-08: Added a feathered 115px pointer color reveal spanning neighboring photo tiles; monochrome returns on pointer exit, touch movement is ignored, and keyboard focus reveals the focused image. Softened text-backdrop gradients and retained photo detail. Browser checked halo movement/exit, image loading, desktop/mobile, no horizontal overflow; build passed.
