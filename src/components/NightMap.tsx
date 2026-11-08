@@ -49,13 +49,20 @@ function frameFor(variant: Variant, width: number, height: number): Frame {
     };
   }
   if (width >= 1024) {
+    // Keep the map left of the fellowship text column, which sits at the
+    // right edge of the 88rem (1408px) container with 48px padding and is
+    // 30rem (480px) wide.
+    const container = Math.min(width, 1408);
+    const containerLeft = (width - container) / 2;
+    const textLeft = containerLeft + container - 48 - 480;
+    const ox = Math.max(width * 0.025, containerLeft + 16);
     const scale = Math.min(
-      (width * 0.66) / map.width,
+      (textLeft - 48 - ox) / map.width,
       (height * 0.76) / map.height,
     );
     return {
       scale,
-      ox: width * 0.035,
+      ox,
       oy: height - map.height * scale - height * 0.07,
     };
   }
