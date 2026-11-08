@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "geo": "node scripts/generate-geo.mjs"
   },
   "dependencies": {
     "next": "^16.1.6",
@@ -18,10 +19,16 @@
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^25.3.3",
     "@types/react": "^19.2.14",
+    "all-the-cities": "^3.1.0",
+    "d3-geo": "^3.1.2",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.1.6",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.1",
-    "typescript": "^5.9.3"
+    "topojson-client": "^3.1.0",
+    "topojson-simplify": "^3.0.3",
+    "typescript": "^5.9.3",
+    "us-atlas": "^3.0.1",
+    "world-atlas": "^2.0.2"
   }
 }

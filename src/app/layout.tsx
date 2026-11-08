@@ -1,41 +1,66 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Gloock, Schibsted_Grotesk } from "next/font/google";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
+const gloock = Gloock({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-gloock",
+  display: "swap",
+});
+
+const schibsted = Schibsted_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-schibsted",
+  display: "swap",
+});
+
+const description =
+  "mhx is a studio for builders. We build software with companies, start our own ventures, and run a fellowship for the people doing the same.";
+
 export const metadata: Metadata = {
-  title: "MHX — Engineering the Future",
-  description:
-    "MHX is a premium technology studio building exceptional digital products, platforms, and experiences.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "mhx. forged in a new era.",
+    template: "%s | mhx.",
+  },
+  description,
   openGraph: {
-    title: "MHX — Engineering the Future",
-    description:
-      "A premium technology studio building exceptional digital products, platforms, and experiences.",
-    url: "https://mhx.dev",
-    siteName: "MHX",
+    title: "mhx. forged in a new era.",
+    description,
+    url: SITE_URL,
+    siteName: "mhx.",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "MHX — Engineering the Future",
-    description:
-      "A premium technology studio building exceptional digital products, platforms, and experiences.",
+    card: "summary",
+    title: "mhx. forged in a new era.",
+    description,
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#04060b",
 };
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="dark">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="bg-zinc-925 text-white font-sans noise">
-        {children}
+    <html lang="en" className={`${gloock.variable} ${schibsted.variable}`}>
+      <body className="min-h-dvh">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-sodium focus:px-4 focus:py-2 focus:text-night"
+        >
+          Skip to content
+        </a>
+        <SiteNav />
+        <main id="main">{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );
