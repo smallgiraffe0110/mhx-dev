@@ -37,3 +37,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local research and prototype working copies
+/work/
+/.agent/references/
+/.agent/previous-draft/
+/.agent/previous-v2/

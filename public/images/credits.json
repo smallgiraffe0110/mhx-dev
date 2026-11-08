@@ -1,0 +1,175 @@
+[
+  {
+    "asset": "control.jpg",
+    "source": "https://images-assets.nasa.gov/image/6901509/6901509~medium.jpg",
+    "title": "Saturn Apollo Program",
+    "nasa_id": "6901509"
+  },
+  {
+    "asset": "earth.jpg",
+    "source": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001282/GSFC_20171208_Archive_e001282~small.jpg",
+    "title": "NASA Google+ Hangout: 'Earthrise' A New Visualization - 45th Anniversary of Apollo 8 Viewing Earth from Space",
+    "nasa_id": "GSFC_20171208_Archive_e001282"
+  },
+  {
+    "asset": "launch.jpg",
+    "source": "https://images-assets.nasa.gov/image/jsc2007e034221/jsc2007e034221~medium.jpg",
+    "title": "Apollo 11 spacecraft pre-launch",
+    "nasa_id": "jsc2007e034221"
+  },
+  {
+    "asset": "workshop.jpg",
+    "source": "https://images-assets.nasa.gov/image/PIA23310/PIA23310~medium.jpg",
+    "title": "Mariner 1 in JPL's Spacecraft Assembly Facility",
+    "nasa_id": "PIA23310"
+  },
+  {
+    "asset": "saturn.jpg",
+    "source": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia17/pia17218/figures/PIA17218_fig1.jpg",
+    "title": "A Farewell to Saturn",
+    "credit": "NASA/JPL-Caltech/Space Science Institute"
+  },
+  {
+    "asset": "inspiration/apple-early-days.webp",
+    "title": "Steve Jobs",
+    "source": "https://www.zfellows.com/",
+    "original_url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f415459055a000d014d609_apple%201.png",
+    "usage": "Editorial inspiration moodboard; not an MHX project or endorsement",
+    "dimensions": [
+      262,
+      154
+    ]
+  },
+  {
+    "asset": "inspiration/starship-night.webp",
+    "title": "Starship \u2014 floodlights and vapor",
+    "source": "https://kosmik.my/2024/03/watch-starship-third-flight-test/",
+    "original_url": "https://kosmik.my/2024/03/watch-starship-third-flight-test/starship-ift-3-01.jpg",
+    "usage": "Editorial inspiration moodboard; not an MHX project or endorsement",
+    "dimensions": [
+      749,
+      1000
+    ]
+  },
+  {
+    "asset": "inspiration/young-jensen.webp",
+    "title": "Young Jensen Huang",
+    "source": "https://www.zfellows.com/",
+    "original_url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f41544f2700d0a9d98ba0d_nvidia%202.png",
+    "usage": "Editorial inspiration moodboard; not an MHX project or endorsement",
+    "dimensions": [
+      288,
+      198
+    ]
+  },
+  {
+    "asset": "inspiration/elon-at-work.webp",
+    "title": "Elon at his computer",
+    "source": "https://www.zfellows.com/",
+    "original_url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f41547ad68b9c0e3011890_spacex%201.png",
+    "usage": "Editorial inspiration moodboard; not an MHX project or endorsement",
+    "dimensions": [
+      287,
+      186
+    ]
+  },
+  {
+    "asset": "inspiration/fusion-chamber.webp",
+    "title": "Wendelstein 7-X \u2014 red and blue chamber",
+    "source": "https://www.mpg.de/24763617/max-planck-technology-transfer",
+    "original_url": "https://www.mpg.de/24763962/original-1747929122.jpg",
+    "usage": "Editorial inspiration moodboard; not an MHX project or endorsement",
+    "dimensions": [
+      1000,
+      476
+    ]
+  },
+  {
+    "asset": "inspiration/webb-mirrors.webp",
+    "title": "James Webb Space Telescope Mirror Integration",
+    "source": "https://spectrum.ieee.org/amp/gao-warns-of-deteriorating-costs-and-schedules-in-nasas-major-project-portfolio-2650277207",
+    "original_url": "https://spectrum.ieee.org/media-library/james-webb-space-telescope-at-the-johnson-space-center.jpg?coordinates=0%2C0%2C0%2C0&height=1500&id=25586073&width=2000",
+    "usage": "Editorial inspiration moodboard; not an MHX project or endorsement",
+    "dimensions": [
+      1000,
+      750
+    ]
+  },
+  {
+    "asset": "reference/starship-ignition.webp",
+    "title": "Starship \u2014 ignition close-up",
+    "source": "https://www.tweaktown.com/news/101247/elon-musk-shares-high-detail-footage-of-starship-launch-captured-on-17-000-camera-lens/index.html",
+    "original_url": "https://static.tweaktown.com/news/16x9/101247_elon-musk-shares-high-detail-footage-of-starship-launch-captured-on-17-000-camera-lens.jpg",
+    "usage": "Inspiration/reference imagery, not MHX work"
+  },
+  {
+    "asset": "reference/raptor-engines.webp",
+    "title": "Super Heavy \u2014 33 Raptor engines",
+    "source": "https://www.space.com/space-exploration/private-spaceflight/33-hungry-spacex-raptors-from-below-space-photo-of-the-day-for-sept-1-2025",
+    "original_url": "https://cdn.mos.cms.futurecdn.net/gw9qoGnK58cqNYPwA8sEdV.jpg",
+    "usage": "Inspiration/reference imagery, not MHX work"
+  },
+  {
+    "asset": "reference/quantum.webp",
+    "title": "IBM \u2014 quantum chandelier",
+    "source": "https://physicsworld.com/a/quantum-computing-on-the-verge-a-look-at-the-quantum-marketplace-of-today/",
+    "original_url": "https://physicsworld.com/wp-content/uploads/2025/10/ibm-chandelier.jpg",
+    "usage": "Inspiration/reference imagery, not MHX work"
+  },
+  {
+    "asset": "reference/google-founders.webp",
+    "title": "Google founders",
+    "source": "https://www.zfellows.com/",
+    "original_url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f3d87c3e4789113105794c_google-founders-siiting-on-table-with%20computer.webp",
+    "usage": "Inspiration/reference imagery, not MHX work"
+  },
+  {
+    "asset": "reference/youtube-founders.webp",
+    "title": "YouTube founders",
+    "source": "https://www.zfellows.com/",
+    "original_url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f3d87c36646f6f2fac557a_youtube-founders-looking-up.webp",
+    "usage": "Inspiration/reference imagery, not MHX work"
+  },
+  {
+    "asset": "reference/gates-allen.webp",
+    "title": "Bill Gates \u2014 early days",
+    "source": "https://www.zfellows.com/",
+    "original_url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f4154528c4e14e38dca9da_msft%202.png",
+    "usage": "Inspiration/reference imagery, not MHX work"
+  },
+  {
+    "asset": "reference/neuralink.webp",
+    "title": "Neuralink \u2014 R1 robot",
+    "source": "https://ifdesign.com/en/winner-ranking/project/neuralink-r1-robot/309555",
+    "original_url": "https://ifdalivestorage.blob.core.windows.net/user-uploads/107292/309555/00000000-0000-0000-0000-000000000000/49551.jpg",
+    "usage": "Inspiration/reference imagery, not MHX work"
+  },
+  {
+    "asset": "reference/neutrino-detector.webp",
+    "title": "Super\u2011Kamiokande Detector Interior",
+    "source": "https://www.isee.nagoya-u.ac.jp/CR/research/neutrinos/",
+    "original_url": "https://www.isee.nagoya-u.ac.jp/CR/assets/neutrinos/sk.jpg",
+    "usage": "Inspiration/reference imagery, not MHX work"
+  },
+  {
+    "asset": "reference/mikey.webp",
+    "title": "Mikey Wessman public profile photo",
+    "source": "https://github.com/MikWess",
+    "original_url": "https://avatars.githubusercontent.com/u/186866449?v=4&s=800"
+  },
+  {
+    "asset": "reference/hunter.webp",
+    "title": "Hunter Earls public profile photo",
+    "source": "https://github.com/smallgiraffe0110",
+    "original_url": "https://avatars.githubusercontent.com/u/187211544?v=4&s=800"
+  },
+  {
+    "asset": "earth-closeup.jpg",
+    "title": "Earth Viewed by Apollo 8",
+    "source": "https://science.nasa.gov/earth/earth-observatory/earth-viewed-by-apollo-8-36019/",
+    "original_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/36000/36019/AS8-16-2593_lrg.jpg",
+    "credit": "NASA / Apollo 8 crew / Johnson Space Center",
+    "nasa_id": "AS08-16-2593",
+    "treatment": "CSS grayscale and oversized crop; source photograph unchanged"
+  }
+]
