@@ -84,10 +84,12 @@
     "asset": "/images/grid/14.webp"
   },
   {
-    "title": "Etched founders",
-    "source": "https://www.zfellows.com/",
-    "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f4154480d3804fa744cef0_Etched%201%201.png",
-    "asset": "/images/grid/15.webp"
+    "title": "Voyager 2 Encapsulation",
+    "source": "https://images.nasa.gov/details/PIA21743",
+    "url": "https://images-assets.nasa.gov/image/PIA21743/PIA21743~medium.jpg",
+    "asset": "/images/grid/15.webp",
+    "credit": "NASA",
+    "nasa_id": "PIA21743"
   },
   {
     "title": "ASML EUV Lithography Machine Interior",
@@ -120,10 +122,12 @@
     "asset": "/images/grid/20.webp"
   },
   {
-    "title": "Z Fellows candid",
-    "source": "https://www.zfellows.com/",
-    "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f41545fa7bd0dc4a8c019d_8268461C-D4C7-436A-8102-6A6A906BCD81IMG_0600%203.png",
-    "asset": "/images/grid/21.webp"
+    "title": "Making Room for Hubble's New Camera",
+    "source": "https://images.nasa.gov/details/PIA22574",
+    "url": "https://images-assets.nasa.gov/image/PIA22574/PIA22574~small.jpg",
+    "asset": "/images/grid/21.webp",
+    "credit": "NASA",
+    "nasa_id": "PIA22574"
   },
   {
     "title": "Wendelstein 7-X \u2014 metallic chamber",
@@ -132,10 +136,12 @@
     "asset": "/images/grid/22.webp"
   },
   {
-    "title": "Mercor founders",
-    "source": "https://www.zfellows.com/",
-    "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f415459decbfc70d86491d_mercor.png",
-    "asset": "/images/grid/23.webp"
+    "title": "NASA's Ingenuity Mars Helicopter",
+    "source": "https://images.nasa.gov/details/PIA23882",
+    "url": "https://images-assets.nasa.gov/image/PIA23882/PIA23882~medium.jpg",
+    "asset": "/images/grid/23.webp",
+    "credit": "NASA",
+    "nasa_id": "PIA23882"
   },
   {
     "title": "RS-25 \u2014 engine firing at night",
@@ -168,10 +174,12 @@
     "asset": "/images/grid/28.webp"
   },
   {
-    "title": "Early Facebook team",
-    "source": "https://www.zfellows.com/",
-    "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f3d87c4fd702cb5465a7da_mark-zuckerberg-and-his-friends-looking-at-a-laptop.webp",
-    "asset": "/images/grid/29.webp"
+    "title": "View of Apollo 14 Lunar Module on the Moon",
+    "source": "https://images.nasa.gov/details/as14-66-9306",
+    "url": "https://images-assets.nasa.gov/image/as14-66-9306/as14-66-9306~medium.jpg",
+    "asset": "/images/grid/29.webp",
+    "credit": "NASA",
+    "nasa_id": "as14-66-9306"
   },
   {
     "title": "Perseverance rover assembly",
@@ -180,10 +188,12 @@
     "asset": "/images/grid/30.webp"
   },
   {
-    "title": "Ethan \u2014 Z Fellows",
-    "source": "https://www.zfellows.com/",
-    "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f415447abd1ee40e5ba49d_Ethan%201%202.png",
-    "asset": "/images/grid/31.webp"
+    "title": "STS-38 Atlantis, OV-104, lifting off from KSC LC Pad during night launch",
+    "source": "https://images.nasa.gov/details/s38-s-027",
+    "url": "https://images-assets.nasa.gov/image/s38-s-027/s38-s-027~medium.jpg",
+    "asset": "/images/grid/31.webp",
+    "credit": "NASA",
+    "nasa_id": "s38-s-027"
   },
   {
     "title": "Falcon Heavy \u2014 twilight landing",
@@ -192,28 +202,36 @@
     "asset": "/images/grid/32.webp"
   },
   {
-    "title": "Etched founders 2",
-    "source": "https://www.zfellows.com/",
-    "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f41545af64de331fd57710_Etched%203%201.avif",
-    "asset": "/images/grid/33.webp"
+    "title": "Parker Solar Probe Heat Shield Installation",
+    "source": "https://images.nasa.gov/details/KSC-20180627-PH_GEB01_0071",
+    "url": "https://images-assets.nasa.gov/image/KSC-20180627-PH_GEB01_0071/KSC-20180627-PH_GEB01_0071~medium.jpg",
+    "asset": "/images/grid/33.webp",
+    "credit": "NASA",
+    "nasa_id": "KSC-20180627-PH_GEB01_0071"
   },
   {
-    "title": "Z Fellows around a table",
-    "source": "https://www.zfellows.com/",
-    "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67fcfd415f8ca304117128e7_standing%20near%20the%20table.png",
-    "asset": "/images/grid/34.webp"
+    "title": "Robonaut 2 on its Centaur base",
+    "source": "https://images.nasa.gov/details/jsc2011e017945",
+    "url": "https://images-assets.nasa.gov/image/jsc2011e017945/jsc2011e017945~medium.jpg",
+    "asset": "/images/grid/34.webp",
+    "credit": "NASA",
+    "nasa_id": "jsc2011e017945"
   },
   {
-    "title": "Z Fellows at work",
-    "source": "https://www.zfellows.com/",
-    "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67fcfd445361f75441fcc120_zfellows%20working%20on%20laptop.png",
-    "asset": "/images/grid/35.webp"
+    "title": "James Webb Space Telescope Mirror Halfway Complete",
+    "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000493",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000493/GSFC_20171208_Archive_e000493~medium.jpg",
+    "asset": "/images/grid/35.webp",
+    "credit": "NASA",
+    "nasa_id": "GSFC_20171208_Archive_e000493"
   },
   {
-    "title": "Z Fellows candid 2",
-    "source": "https://www.zfellows.com/",
-    "url": "https://cdn.prod.website-files.com/638f3177988a2191df92b80b/67f4154522d4fd2295b8069e_IMG_9615%201.avif",
-    "asset": "/images/grid/36.webp"
+    "title": "Curiosity Self-Portrait at Okoruso Drill Hole",
+    "source": "https://images.nasa.gov/details/PIA20603",
+    "url": "https://images-assets.nasa.gov/image/PIA20603/PIA20603~medium.jpg",
+    "asset": "/images/grid/36.webp",
+    "credit": "NASA",
+    "nasa_id": "PIA20603"
   },
   {
     "title": "Neuralink \u2014 R1 robot",
