@@ -30,7 +30,7 @@ Forms are local previews with validation and confirmation only. They do not send
 
 ## Validate
 
-Stop the dev server, then run `npm run build` for TypeScript and static export checks. Restart dev afterward. If styles remain stale, stop dev and clear its generated `.next/dev` cache before restarting. The inherited `npm run lint` command still uses the removed `next lint` command.
+Stop the dev server, then run `npm run build` for TypeScript and static export checks. Restart dev afterward. If styles remain stale, stop dev and clear its generated `.next/dev` cache before restarting. Run `npm run lint` (ESLint 9 flat config) and `npm run typecheck`.
 
 Desktop and 390px mobile layouts have been inspected; the latest build passed. Private brainstorm source material, downloaded reference HTML, and scratch copies are excluded from Git.
 

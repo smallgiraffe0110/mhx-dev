@@ -26,7 +26,7 @@ Mikey and Hunter's four-page website prototype. This is an iterative prototype, 
 
 Run `npm run build` for TypeScript and static-export validation. Stop the dev server before a production build, then restart it; concurrent runs produced stale preview CSS during the initial session. If changed CSS still fails to appear after a restart, stop dev and move `.next/dev` outside the repo before restarting; verify computed styles in the browser.
 
-Inspect all four routes on desktop and narrow/mobile widths. Check both dialogs, required fields, confirmation wording, Escape dismissal, navigation, loaded imagery, and no horizontal overflow. The existing `npm run lint` still uses legacy `next lint`; do not report it as a passing check.
+Inspect all four routes on desktop and narrow/mobile widths. Check both dialogs, required fields, confirmation wording, Escape dismissal, navigation, loaded imagery, and no horizontal overflow. `npm run lint` runs ESLint 9 with the flat config (`eslint.config.mjs`); `npm run typecheck` runs `tsc --noEmit`.
 
 Previous validation, November 8, source-led revision: production build and TypeScript/static export passed; four routes inspected on desktop and mobile; navigation, image dialog/Escape, video pause, required fields and both local form confirmations verified. Independent visual review completed; corrected cropped photo border, Us text collision, and bright-video contrast. No commit, push, deployment, or real form submission.
 
