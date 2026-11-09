@@ -5,7 +5,6 @@ import {
   useEffect,
   useRef,
   useState,
-  type CSSProperties,
   type FormEvent,
 } from "react";
 
@@ -88,8 +87,8 @@ const photographs = [
   },
   {
     "src": "grid/15.webp",
-    "alt": "Etched founders",
-    "name": "Etched founders"
+    "alt": "Voyager 2 Encapsulation",
+    "name": "Voyager 2 Encapsulation"
   },
   {
     "src": "grid/16.webp",
@@ -118,8 +117,8 @@ const photographs = [
   },
   {
     "src": "grid/21.webp",
-    "alt": "Z Fellows candid",
-    "name": "Z Fellows candid"
+    "alt": "Making Room for Hubble's New Camera",
+    "name": "Making Room for Hubble's New Camera"
   },
   {
     "src": "grid/22.webp",
@@ -128,8 +127,8 @@ const photographs = [
   },
   {
     "src": "grid/23.webp",
-    "alt": "Mercor founders",
-    "name": "Mercor founders"
+    "alt": "NASA's Ingenuity Mars Helicopter",
+    "name": "NASA's Ingenuity Mars Helicopter"
   },
   {
     "src": "grid/24.webp",
@@ -158,8 +157,8 @@ const photographs = [
   },
   {
     "src": "grid/29.webp",
-    "alt": "Early Facebook team",
-    "name": "Early Facebook team"
+    "alt": "View of Apollo 14 Lunar Module on the Moon",
+    "name": "View of Apollo 14 Lunar Module on the Moon"
   },
   {
     "src": "grid/30.webp",
@@ -168,8 +167,8 @@ const photographs = [
   },
   {
     "src": "grid/31.webp",
-    "alt": "Ethan \u2014 Z Fellows",
-    "name": "Ethan \u2014 Z Fellows"
+    "alt": "STS-38 Atlantis, OV-104, lifting off from KSC LC Pad during night launch",
+    "name": "STS-38 Atlantis, OV-104, lifting off from KSC LC Pad during night launch"
   },
   {
     "src": "grid/32.webp",
@@ -178,23 +177,23 @@ const photographs = [
   },
   {
     "src": "grid/33.webp",
-    "alt": "Etched founders 2",
-    "name": "Etched founders 2"
+    "alt": "Parker Solar Probe Heat Shield Installation",
+    "name": "Parker Solar Probe Heat Shield Installation"
   },
   {
     "src": "grid/34.webp",
-    "alt": "Z Fellows around a table",
-    "name": "Z Fellows around a table"
+    "alt": "Robonaut 2 on its Centaur base",
+    "name": "Robonaut 2 on its Centaur base"
   },
   {
     "src": "grid/35.webp",
-    "alt": "Z Fellows at work",
-    "name": "Z Fellows at work"
+    "alt": "James Webb Space Telescope Mirror Halfway Complete",
+    "name": "James Webb Space Telescope Mirror Halfway Complete"
   },
   {
     "src": "grid/36.webp",
-    "alt": "Z Fellows candid 2",
-    "name": "Z Fellows candid 2"
+    "alt": "Curiosity Self-Portrait at Okoruso Drill Hole",
+    "name": "Curiosity Self-Portrait at Okoruso Drill Hole"
   },
   {
     "src": "grid/37.webp",
@@ -286,27 +285,38 @@ const photographs = [
 // Uniform squares fill the viewport. A radial delay carries the wake from the
 // headline through the field; the shuffled cycle avoids adjacent duplicates.
 const fieldPhotos = Array.from({ length: 126 }, (_, i) => (i * 23) % photographs.length);
-function waveStyle(index: number) {
-  function wave(columns: number, prefix: string) {
-    const dx = index % columns - columns * 0.32;
-    const dy = Math.floor(index / columns) - (columns === 14 ? 3.5 : 4.5);
-    return {
-      [`--${prefix}delay`]: `${Math.hypot(dx, dy) * 110}ms`,
-      [`--${prefix}push-x`]: `${dx * 1.5}px`,
-      [`--${prefix}push-y`]: `${dy * 1.5}px`,
-    };
-  }
-  return { ...wave(14, "d"), ...wave(7, "m") } as CSSProperties;
-}
 
 function Home({ onImage }: { onImage: (index: number) => void }) {
-  const [paused, setPaused] = useState(false);
   const stage = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const root = stage.current;
     if (!root) return;
     const tiles = Array.from(root.querySelectorAll<HTMLElement>(".photo"));
+    let active = true;
+    let entranceFrame = 0;
+    // Measure the actual text after fonts load so the one-shot wave starts at
+    // "forged in a new era." on desktop and mobile, not a guessed grid cell.
+    document.fonts.ready.then(() => {
+      if (!active) return;
+      const heading = root.querySelector("h1");
+      if (!heading) return;
+      const text = document.createRange();
+      text.selectNodeContents(heading);
+      const origin = text.getBoundingClientRect();
+      const centerX = origin.left + origin.width / 2;
+      const centerY = origin.top + origin.height / 2;
+      const bounds = tiles.map((tile) => tile.getBoundingClientRect());
+      tiles.forEach((tile, index) => {
+        const rect = bounds[index];
+        const dx = rect.left + rect.width / 2 - centerX;
+        const dy = rect.top + rect.height / 2 - centerY;
+        tile.style.setProperty("--delay", `${Math.hypot(dx, dy) * 0.85}ms`);
+        tile.style.setProperty("--push-x", `${dx * 0.035}px`);
+        tile.style.setProperty("--push-y", `${dy * 0.035}px`);
+      });
+      entranceFrame = requestAnimationFrame(() => root.classList.add("wake-ready"));
+    });
     let frame = 0;
     let cursor: { x: number; y: number } | null = null;
     const paint = () => {
@@ -320,7 +330,7 @@ function Home({ onImage }: { onImage: (index: number) => void }) {
         const rect = bounds[index];
         const dx = Math.max(rect.left - x, 0, x - rect.right);
         const dy = Math.max(rect.top - y, 0, y - rect.bottom);
-        const near = Math.hypot(dx, dy) < 115;
+        const near = Math.hypot(dx, dy) < 155;
         tile.classList.toggle("is-near", near);
         if (near) {
           tile.style.setProperty("--spot-x", `${(x - rect.left) / rect.width * 100}%`);
@@ -342,6 +352,8 @@ function Home({ onImage }: { onImage: (index: number) => void }) {
     root.addEventListener("pointermove", move);
     root.addEventListener("pointerleave", leave);
     return () => {
+      active = false;
+      cancelAnimationFrame(entranceFrame);
       leave();
       root.removeEventListener("pointermove", move);
       root.removeEventListener("pointerleave", leave);
@@ -349,7 +361,7 @@ function Home({ onImage }: { onImage: (index: number) => void }) {
   }, []);
 
   return (
-    <main ref={stage} id="main" className={`home-stage${paused ? " wake-paused" : ""}`}>
+    <main ref={stage} id="main" className="home-stage">
       <div
         className="photo-field"
         aria-label="People and technology that inspire us"
@@ -360,7 +372,6 @@ function Home({ onImage }: { onImage: (index: number) => void }) {
           <button
             key={i}
             className="photo"
-            style={waveStyle(i)}
             onClick={() => onImage(photoIndex)}
             aria-label={`View ${photo.name}`}
           >
@@ -398,9 +409,6 @@ function Home({ onImage }: { onImage: (index: number) => void }) {
           </Link>
         </div>
       </aside>
-      <button className="wake-toggle" onClick={() => setPaused(!paused)} aria-pressed={paused}>
-        {paused ? "Resume motion" : "Pause motion"}
-      </button>
     </main>
   );
 }
@@ -479,21 +487,15 @@ function Us() {
 
 function Collaborate({ onOpen }: { onOpen: () => void }) {
   const video = useRef<HTMLVideoElement>(null);
-  const [playing, setPlaying] = useState(false);
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (!reduced.matches) video.current?.play().catch(() => setPlaying(false));
+    if (!reduced.matches) video.current?.play().catch(() => {});
     const onChange = () => {
       if (reduced.matches) video.current?.pause();
     };
     reduced.addEventListener("change", onChange);
     return () => reduced.removeEventListener("change", onChange);
   }, []);
-  function toggle() {
-    if (video.current?.paused)
-      video.current.play().catch(() => setPlaying(false));
-    else video.current?.pause();
-  }
   return (
     <main id="main" className="cinema collaborate-stage">
       <video
@@ -504,8 +506,6 @@ function Collaborate({ onOpen }: { onOpen: () => void }) {
         playsInline
         preload="metadata"
         poster="/images/collab-computing-poster.jpg"
-        onPlay={() => setPlaying(true)}
-        onPause={() => setPlaying(false)}
         aria-label="1950s engineers and operators at early computers, switchboards, and relay racks, shown in black and white"
       >
         <source src="/video/collab-computing.mp4" type="video/mp4" />
@@ -545,15 +545,6 @@ function Collaborate({ onOpen }: { onOpen: () => void }) {
           >
             Footage: Prelinger Archives
           </a>
-          <button
-            className="media-toggle"
-            onClick={toggle}
-            aria-label={
-              playing ? "Pause background film" : "Play background film"
-            }
-          >
-            {playing ? "Pause film" : "Play film"}
-          </button>
         </div>
       </div>
     </main>
@@ -562,21 +553,15 @@ function Collaborate({ onOpen }: { onOpen: () => void }) {
 
 function Foundry({ onOpen }: { onOpen: () => void }) {
   const video = useRef<HTMLVideoElement>(null);
-  const [playing, setPlaying] = useState(false);
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (!reduced.matches) video.current?.play().catch(() => setPlaying(false));
+    if (!reduced.matches) video.current?.play().catch(() => {});
     const onChange = () => {
       if (reduced.matches) video.current?.pause();
     };
     reduced.addEventListener("change", onChange);
     return () => reduced.removeEventListener("change", onChange);
   }, []);
-  function toggle() {
-    if (video.current?.paused)
-      video.current.play().catch(() => setPlaying(false));
-    else video.current?.pause();
-  }
   return (
     <main id="main" className="cinema foundry-stage">
       <video
@@ -587,9 +572,7 @@ function Foundry({ onOpen }: { onOpen: () => void }) {
         playsInline
         preload="auto"
         poster="/images/foundry-orbit-reel-poster.jpg"
-        onPlay={() => setPlaying(true)}
-        onPause={() => setPlaying(false)}
-        aria-label="Earth from the International Space Station: horizon, coastline, clouds, and the atmosphere at sunset, shown in black and white"
+        aria-label="NASA space footage: Orion approaching the Moon, the station above Earth, Earthset behind the Moon, and orbital sunrise, shown in black and white"
       >
         <source src="/video/foundry-orbit-reel.mp4" type="video/mp4" />
       </video>
@@ -625,19 +608,12 @@ function Foundry({ onOpen }: { onOpen: () => void }) {
         <span>Big ideas don’t ask where you came from.</span>
         <div>
           <a
-            href="https://images.nasa.gov/details/Earth%20Views%20from%20the%20International%20Space%20Station"
+            href="/video/credits.json"
             target="_blank"
             rel="noreferrer"
           >
             Footage: NASA
           </a>
-          <button
-            className="media-toggle"
-            onClick={toggle}
-            aria-label={playing ? "Pause background film" : "Play background film"}
-          >
-            {playing ? "Pause film" : "Play film"}
-          </button>
         </div>
       </div>
     </main>

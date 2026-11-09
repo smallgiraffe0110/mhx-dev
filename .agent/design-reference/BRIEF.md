@@ -6,7 +6,7 @@ Mikey explicitly wants a dark app without the previous fonts. Shared brainstorm 
 ## Purpose and composition
 - Signaling: ethos, network, story. Conversion: collaboration and fellowship applications.
 - The young, ambitious builder starting from zero is the hero. Mikey and Hunter’s faces and personal story belong on Us.
-- Latest direction supersedes the compact cluster: fill the whole page with many uniform square photos, rippling outward like a wake. Overlay “forged in a new era.” and “A new generation. Building from zero.” with the photographs fading away behind the text. Current field uses 126 tiles from 53 source images; repeated photos are intentional.
+- Latest direction supersedes the compact cluster: fill the whole page with many uniform square photos, rippling outward once from the headline on arrival, then remaining still. Overlay “forged in a new era.” and “A new generation. Building from zero.” with the photographs fading away behind the text. Current field uses 126 tiles from 53 source images; repeated photos are intentional.
 - Home: prominent “forged in a new era.”, compact black-and-white founder/rocket/AI motifs, outward animation on arrival, short thesis and conversion links. Desktop fits in one viewport with top navigation; mobile may scroll for legibility.
 - Us: belief/that/compounds composition, real portraits, story. Don’t fabricate locations or network partners.
 - Collaborate: fresh scrappy AI-native perspective, skills and young network; brief/contact form. Avoid consulting-sales language.
@@ -17,4 +17,6 @@ Mikey explicitly wants a dark app without the previous fonts. Shared brainstorm 
 Dark background comes directly from Mikey’s correction. Inter is measured from Z Fellows h1 (700, 72px line-height72, tracking−3.2px); MHX scales it to the selected wireframes. Home photographic assets come from his supplied collection. a16z footage and NASA Saturn remain attributed local reference assets. No synthetic founder portraits or hand-built decorative globe/telescope.
 
 ## Validation
-Check no desktop homepage scrolling at common laptop dimensions, no horizontal overflow on mobile, readable headings and image boundaries, dark forms, native required fields and Escape, video pause, and reduced-motion behavior. Pixel precision means checked spacing and boundaries, not an unsupported claim that every adapted page matches a source pixel for pixel.
+Check no desktop homepage scrolling at common laptop dimensions, no horizontal overflow on mobile, readable headings and image boundaries, dark forms, native required fields and Escape, absence of motion/video controls, and reduced-motion behavior. Pixel precision means checked spacing and boundaries, not an unsupported claim that every adapted page matches a source pixel for pixel.
+
+Latest image selection: keep iconic founder photos; replace lesser-known program/company portraits and generic group photos with real technology imagery. No visible pause controls on home or video pages.
