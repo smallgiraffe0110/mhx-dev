@@ -503,12 +503,12 @@ function Collaborate({ onOpen }: { onOpen: () => void }) {
         loop
         playsInline
         preload="metadata"
-        poster="/images/reference/starship-ignition.webp"
+        poster="/images/collab-computing-poster.jpg"
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
-        aria-label="A montage of technology, builders, and scientific progress"
+        aria-label="1950s engineers and operators at early computers, switchboards, and relay racks, shown in black and white"
       >
-        <source src="/video/build-reference.mp4" type="video/mp4" />
+        <source src="/video/collab-computing.mp4" type="video/mp4" />
       </video>
       <div className="cinema-shade" />
       <div className="cinema-content">
@@ -538,8 +538,12 @@ function Collaborate({ onOpen }: { onOpen: () => void }) {
       <div className="cinema-meta">
         <span>Products. Prototypes. New possibilities.</span>
         <div>
-          <a href="https://a16z.com/" target="_blank" rel="noreferrer">
-            Film reference: a16z
+          <a
+            href="https://archive.org/details/OnGuard1956"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Footage: Prelinger Archives
           </a>
           <button
             className="media-toggle"
@@ -557,13 +561,38 @@ function Collaborate({ onOpen }: { onOpen: () => void }) {
 }
 
 function Foundry({ onOpen }: { onOpen: () => void }) {
+  const video = useRef<HTMLVideoElement>(null);
+  const [playing, setPlaying] = useState(false);
+  useEffect(() => {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (!reduced.matches) video.current?.play().catch(() => setPlaying(false));
+    const onChange = () => {
+      if (reduced.matches) video.current?.pause();
+    };
+    reduced.addEventListener("change", onChange);
+    return () => reduced.removeEventListener("change", onChange);
+  }, []);
+  function toggle() {
+    if (video.current?.paused)
+      video.current.play().catch(() => setPlaying(false));
+    else video.current?.pause();
+  }
   return (
     <main id="main" className="cinema foundry-stage">
-      <img
-        className="earth-photo"
-        src="/images/earth-closeup.jpg"
-        alt="Earth photographed by the Apollo 8 crew, shown in black and white"
-      />
+      <video
+        ref={video}
+        className="cinema-media"
+        muted
+        loop
+        playsInline
+        preload="auto"
+        poster="/images/foundry-orbit-reel-poster.jpg"
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        aria-label="Earth from the International Space Station: horizon, coastline, clouds, and the atmosphere at sunset, shown in black and white"
+      >
+        <source src="/video/foundry-orbit-reel.mp4" type="video/mp4" />
+      </video>
       <div className="cinema-shade" />
       <div className="foundry-heading">
         <p className="overline">The MHX Foundry</p>
@@ -594,13 +623,22 @@ function Foundry({ onOpen }: { onOpen: () => void }) {
       </div>
       <div className="cinema-meta">
         <span>Big ideas don’t ask where you came from.</span>
-        <a
-          href="https://science.nasa.gov/earth/earth-observatory/earth-viewed-by-apollo-8-36019/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Earth / Apollo 8 · NASA
-        </a>
+        <div>
+          <a
+            href="https://images.nasa.gov/details/Earth%20Views%20from%20the%20International%20Space%20Station"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Footage: NASA
+          </a>
+          <button
+            className="media-toggle"
+            onClick={toggle}
+            aria-label={playing ? "Pause background film" : "Play background film"}
+          >
+            {playing ? "Pause film" : "Play film"}
+          </button>
+        </div>
       </div>
     </main>
   );

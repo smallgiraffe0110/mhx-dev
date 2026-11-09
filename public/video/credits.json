@@ -1,6 +1,34 @@
-{
-  "asset": "build-reference.mp4",
-  "source": "https://a16z.com/",
-  "original_url": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/03/fundraise-landscape.mp4",
-  "usage": "Direct reference footage in local MHX design prototype; visible source credit; no MHX ownership or affiliation claim"
-}
+[
+  {
+    "asset": "collab-computing.mp4",
+    "poster": "images/collab-computing-poster.jpg",
+    "credit": "Prelinger Archives (public domain); edited locally — trimmed, deinterlaced, cropped to 16:9, crossfaded, faded from/to black, monochrome grade",
+    "usage": "25 s 1920x1080 H.264 loop; Collaborate page background",
+    "sources": [
+      {
+        "title": "On Guard! The Story of SAGE (1956)",
+        "identifier": "OnGuard1956",
+        "url": "https://archive.org/details/OnGuard1956",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "segments_s": ["115-119", "159.5-163", "594.5-598.5", "603-607", "612.5-617"]
+      },
+      {
+        "title": "Nation at Your Fingertips, The (1951)",
+        "identifier": "Nationat1951",
+        "url": "https://archive.org/details/Nationat1951",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "segments_s": ["325-329", "437-441"]
+      }
+    ]
+  },
+  {
+    "asset": "foundry-orbit-reel.mp4",
+    "poster": "images/foundry-orbit-reel-poster.jpg",
+    "title": "Earth Views from the International Space Station",
+    "credit": "NASA (public domain); edited locally — trimmed, sped up 1.5–2x, crossfaded, faded from/to black, monochrome grade",
+    "source": "https://images.nasa.gov/details/Earth%20Views%20from%20the%20International%20Space%20Station",
+    "nasa_id": "Earth Views from the International Space Station",
+    "segments_s": ["13-23", "29-37", "49.5-57.5", "59-69", "172-185"],
+    "usage": "23.5 s 1920x1080 H.264 loop; Foundry page background"
+  }
+]
