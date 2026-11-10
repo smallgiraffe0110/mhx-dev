@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { FoundryApplication } from "@/components/FoundryApplication";
 import {
   useEffect,
   useRef,
@@ -8,7 +9,7 @@ import {
   type FormEvent,
 } from "react";
 
-type Page = "home" | "us" | "collaborate" | "foundry";
+type Page = "home" | "us" | "collaborate" | "foundry" | "apply";
 const navigation = [
   { id: "us", label: "Us", href: "/us" },
   { id: "collaborate", label: "Collaborate", href: "/collaborate" },
@@ -551,7 +552,7 @@ function Collaborate({ onOpen }: { onOpen: () => void }) {
   );
 }
 
-function Foundry({ onOpen }: { onOpen: () => void }) {
+function Foundry() {
   const video = useRef<HTMLVideoElement>(null);
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -597,9 +598,9 @@ function Foundry({ onOpen }: { onOpen: () => void }) {
           For young builders starting from zero. The Foundry is a place to find
           your people, put your ambition to work, and be taken seriously early.
         </p>
-        <button className="pill" onClick={onOpen}>
+        <Link className="pill" href="/foundry/apply">
           Apply to the Foundry <span aria-hidden="true">↗</span>
-        </button>
+        </Link>
         <span className="foundry-invitation">
           Tell us what you’re building. Or what you want to.
         </span>
@@ -620,6 +621,56 @@ function Foundry({ onOpen }: { onOpen: () => void }) {
   );
 }
 
+function Apply() {
+  const [complete, setComplete] = useState(false);
+  const received = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    if (!complete) return;
+    window.scrollTo({ top: 0 });
+    received.current?.focus();
+  }, [complete]);
+  if (complete) {
+    return (
+      <main id="main" className="apply-stage apply-received">
+        <p className="overline">Application received</p>
+        <h1 ref={received} tabIndex={-1}>
+          A good beginning.
+        </h1>
+        <p role="status">
+          Thanks for showing us your work. The MHX team has received your
+          application.
+        </p>
+        <Link className="pill" href="/foundry">
+          Back to the Foundry <span aria-hidden="true">↗</span>
+        </Link>
+      </main>
+    );
+  }
+  return (
+    <main id="main" className="apply-stage">
+      <div className="apply-intro">
+        <Link className="apply-back" href="/foundry">
+          <span aria-hidden="true">←</span> The Foundry
+        </Link>
+        <p className="overline">MHX Foundry · Application</p>
+        <h1 id="apply-title">
+          Show us what
+          <br />
+          you’re building.
+        </h1>
+        <p className="application-intro">
+          What you’ve made. What you’re figuring out. What comes next.
+        </p>
+        <p className="form-note">
+          Short, specific answers are best. Include links wherever you can. All
+          fields are required.
+        </p>
+      </div>
+      <FoundryApplication onComplete={() => setComplete(true)} />
+    </main>
+  );
+}
+
 export function Experience({ page }: { page: Page }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const imageDialog = useRef<HTMLDialogElement>(null);
@@ -627,7 +678,6 @@ export function Experience({ page }: { page: Page }) {
   const [selectedImage, setSelectedImage] = useState(0);
   const [complete, setComplete] = useState(false);
   const dark = page === "collaborate" || page === "foundry";
-  const isFoundry = page === "foundry";
   useEffect(() => {
     if (complete) successButton.current?.focus();
   }, [complete]);
@@ -657,7 +707,11 @@ export function Experience({ page }: { page: Page }) {
             <Link
               key={item.id}
               href={item.href}
-              className={page === item.id ? "active" : ""}
+              className={
+                page === item.id || (page === "apply" && item.id === "foundry")
+                  ? "active"
+                  : ""
+              }
               aria-current={page === item.id ? "page" : undefined}
             >
               {item.label}
@@ -671,8 +725,10 @@ export function Experience({ page }: { page: Page }) {
         <Us />
       ) : page === "collaborate" ? (
         <Collaborate onOpen={openForm} />
+      ) : page === "foundry" ? (
+        <Foundry />
       ) : (
-        <Foundry onOpen={openForm} />
+        <Apply />
       )}
       {!dark && (
         <footer className="site-footer">
@@ -709,18 +765,13 @@ export function Experience({ page }: { page: Page }) {
               className="pill"
               onClick={() => dialog.current?.close()}
             >
-              Back to {isFoundry ? "the foundry" : "collaborating"}{" "}
-              <span aria-hidden="true">↗</span>
+              Back to collaborating <span aria-hidden="true">↗</span>
             </button>
           </div>
         ) : (
           <form onSubmit={submit}>
-            <p className="overline">
-              {isFoundry ? "The MHX Foundry" : "Let’s build something"}
-            </p>
-            <h2 id="dialog-title">
-              {isFoundry ? "Find your people." : "What’s on your mind?"}
-            </h2>
+            <p className="overline">Let’s build something</p>
+            <h2 id="dialog-title">What’s on your mind?</h2>
             <p className="form-note">
               Local form preview. Nothing will be sent.
             </p>
@@ -747,9 +798,7 @@ export function Experience({ page }: { page: Page }) {
               />
             </label>
             <label>
-              {isFoundry
-                ? "What are you building or curious about?"
-                : "What would you like to build together?"}
+              What would you like to build together?
               <textarea
                 required
                 name="idea"
@@ -759,9 +808,7 @@ export function Experience({ page }: { page: Page }) {
               />
             </label>
             <button className="pill" type="submit">
-              {isFoundry
-                ? "Preview application"
-                : "Preview collaboration request"}
+              Preview collaboration request
               <span aria-hidden="true">↗</span>
             </button>
           </form>

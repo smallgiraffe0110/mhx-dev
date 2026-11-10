@@ -1,0 +1,7 @@
+# Copy to .dev.vars for local testing. Set production values as Pages secrets.
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+SMTP_USER=
+SMTP_PASS=
+NOTIFICATION_FROM=
+NOTIFICATION_TO=

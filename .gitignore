@@ -44,3 +44,7 @@ next-env.d.ts
 /.agent/previous-draft/
 /.agent/previous-v2/
 .gstack/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.wrangler/

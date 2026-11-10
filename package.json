@@ -7,16 +7,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/foundry.test.ts"
   },
   "dependencies": {
     "next": "^16.1.6",
+    "nodemailer": "^10.4.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261109.1",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^25.3.3",
+    "@types/nodemailer": "^8.0.2",
     "@types/react": "^19.2.14",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.1.6",

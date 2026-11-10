@@ -630,6 +630,55 @@ textarea:focus-visible {
   color: #bbb;
   margin: 24px 0;
 }
+.apply-stage {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 72px 4% 120px;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  column-gap: 8%;
+  align-items: start;
+}
+.apply-intro { position: sticky; top: 72px; }
+.apply-back { display: inline-flex; gap: 10px; align-items: center; color: #ababab; font-size: 13px; font-weight: 500; margin-bottom: 56px; transition: color 0.2s; }
+.apply-back:hover { color: #fff; }
+.apply-stage h1 { font-size: clamp(44px, 4.3vw, 80px); line-height: 0.98; margin: 22px 0 28px; }
+.application-intro { color: #ddd; font-size: 18px; line-height: 1.6; margin-bottom: 14px; max-width: 30em; }
+.apply-intro .form-note { font-size: 13px; line-height: 1.6; color: #aaa; margin-bottom: 0; max-width: 34em; }
+.foundry-application { max-width: 760px; width: 100%; justify-self: end; }
+.foundry-application fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.foundry-application label { display: block; font-size: 13px; }
+.foundry-application input,
+.foundry-application textarea { display: block; width: 100%; font-size: 16px; resize: vertical; }
+.application-identity { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.application-identity input { margin-top: 6px; padding: 12px 0; background: transparent; border: 0; border-bottom: 1px solid #555; border-radius: 0; }
+.application-question { border-top: 1px solid #333; padding-top: 32px; margin-top: 40px; }
+.application-question label { font-size: 20px; line-height: 1.4; font-weight: 500; letter-spacing: -0.015em; margin: 0 0 8px; }
+.question-number { display: block; color: #999; font-size: 12px; letter-spacing: 0; font-variant-numeric: tabular-nums; margin-bottom: 10px; }
+.field-hint { color: #aaa; font-size: 14px; line-height: 1.6; margin-bottom: 16px; }
+.foundry-application textarea { background: #151515; border: 1px solid #444; border-radius: 4px; padding: 14px; line-height: 1.6; }
+.foundry-application textarea:focus, .foundry-application input:focus { outline: 2px solid #ddd; outline-offset: 3px; }
+.application-honeypot { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.application-error { margin: 28px 0 0; color: #ffc3b9; font-size: 14px; line-height: 1.6; }
+.foundry-application .pill { margin-top: 36px; }
+.foundry-application .pill:disabled { opacity: .65; cursor: wait; }
+.application-privacy { color: #aaa; font-size: 12px; line-height: 1.6; margin-top: 16px; }
+.apply-received { display: block; min-height: calc(100svh - 84px - 46px); padding-top: 16vh; }
+.apply-received h1:focus { outline: none; }
+.apply-received > p:not(.overline) { font-size: 18px; line-height: 1.6; color: #bbb; max-width: 30em; margin-bottom: 36px; }
+@media (max-width: 900px) {
+  .apply-stage { grid-template-columns: minmax(0, 1fr); padding: 40px 4% 88px; }
+  .apply-intro { position: static; margin-bottom: 48px; }
+  .apply-back { margin-bottom: 36px; }
+  .foundry-application { justify-self: start; }
+}
+@media (max-width: 700px) {
+  .apply-stage { padding: 28px 20px 72px; }
+  .apply-stage h1 { font-size: 40px; }
+  .application-identity { grid-template-columns: 1fr; gap: 24px; }
+  .application-question label { font-size: 18px; }
+  .foundry-application .pill { width: 100%; }
+}
 .image-dialog {
   max-width: 760px;
   padding: 44px 24px 20px;
